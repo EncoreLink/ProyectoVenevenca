@@ -1,11 +1,4 @@
-/*
-
-Known Template 
-
-https://templatemo.com/tm-516-known
-
-*/
-
+}
   @import url('https://fonts.googleapis.com/css?family=Muli:300,700|Nunito');
 
   body {
@@ -258,14 +251,15 @@ https://templatemo.com/tm-516-known
 
   .custom-navbar {
     background: #ffffff;
-    border-top: 5px solid #19afe1;
+    border-top: 4px solid #19afe1;
     border-bottom: 0;
     -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-    padding: 12px 0;
+    padding: 24px 0;
     margin-bottom: 0;
     padding: 0;
+    height: 10000;
   }
 
   .custom-navbar .navbar-brand {
@@ -280,20 +274,20 @@ https://templatemo.com/tm-516-known
   }
 
   .custom-navbar .navbar-nav.navbar-right li a {
-    padding-right: 12px;
-    padding-left: 12px;
+    padding-right: auto;
+    padding-left: auto;
   }
 
   .custom-navbar .navbar-nav.navbar-right li a .fa {
     background: #19afe1;
     border-radius: 100%;
     color: #ffffff;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+    width: 44px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
     display: inline-block;
-    margin-right: 5px;
+    margin-right: px;
   }
 
   .custom-navbar .nav li a {
@@ -331,6 +325,62 @@ https://templatemo.com/tm-516-known
     background: #252525;
     border-color: transparent;
   }
+  /* Sub menu configuracion */
+  .submenu {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    position: absolute;
+    background: #ffffff;
+    width: 190px;
+   
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5seg;
+   }
+   
+   .submenu li a{
+     
+  
+    display:block;
+     padding: 20px;
+     color:#ffffff;
+     font-family: 'Open sans';
+     text-decoration: none;
+       }
+       .custom-navbar li:hover .submenu{
+         visibility: visible;
+         opacity: 1;
+       } 
+/*Subtarifas*/
+.subtarifas {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+  position: absolute;
+  background: #ffffff;
+  width:10 px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5seg;
+ }
+ 
+ .subtarifas li a{
+
+  display:block;
+   padding: 20px;
+   color:#ffffff;
+   font-family: 'Open sans';
+   text-decoration: none;
+     }
+     .custom-navbar li:hover .subtarifas{
+       visibility: visible;
+       opacity: 1;
+     } 
 
 
 
@@ -403,6 +453,7 @@ https://templatemo.com/tm-516-known
   .feature-thumb {
     border: 1px solid #f0f0f0;
     padding: 5em 3em;
+  
   }
 
   .feature-thumb span {
@@ -417,16 +468,18 @@ https://templatemo.com/tm-516-known
     line-height: 60px;
     text-align: center;
     margin-bottom: 5px;
+    
   }
 
   .feature-thumb h3 {
     margin: 10px 0;
+    
   }
 
 
 
   /*---------------------------------------
-      ABOUT              
+     Quienes somos          
   -----------------------------------------*/
 
   #about figure {
@@ -444,7 +497,7 @@ https://templatemo.com/tm-516-known
   }
 
   #about figure span i {
-    background: #29ca8e;
+    background: #19afe1;
     border-radius: 50px;
     color: #ffffff;
     font-size: 25px;
@@ -454,14 +507,12 @@ https://templatemo.com/tm-516-known
     text-align: center;
   }
 
-
-
   /*---------------------------------------
       TEAM              
   -----------------------------------------*/
 
   .team-thumb {
-    background: #ffffff;
+    background: #000000;
     position: relative;
     overflow: hidden;
     text-align: left;
