@@ -35,7 +35,11 @@
     font-size: 1.5em;
     margin-bottom: 0;
   }
-
+ h5 {
+  color: #fff;
+  font-size: 3em;
+  line-height: normal
+}
   h3,
   h3 a {
     color: #454545;
@@ -73,7 +77,7 @@
   }
 
   a:hover, a:active, a:focus {
-    color: #29ca8e;
+    color: #efc138;
     outline: none;
   }
 
@@ -189,8 +193,9 @@
   }
 
   .section-btn:hover {
-    background: #ffffff;
-    border-color: transparent;
+    background: #19afe1;
+    border-color: white;
+    color: #ffffff;
   }
 
 
@@ -253,24 +258,24 @@
     background: #ffffff;
     border-top: 4px solid #19afe1;
     border-bottom: 0;
-    -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-    padding: 24px 0;
+    -webkit-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
     margin-bottom: 0;
     padding: 0;
-    height: 10000;
+    
   }
 
   .custom-navbar .navbar-brand {
     color: #454545;
     font-size: 18px;
     font-weight: bold;
-    line-height: 40px;
+    line-height: 30px;
   }
 
   .custom-navbar .navbar-nav.navbar-nav-first {
-    margin-left: 8em;
+    margin-left: 8px;
   }
 
   .custom-navbar .navbar-nav.navbar-right li a {
@@ -282,12 +287,12 @@
     background: #19afe1;
     border-radius: 100%;
     color: #ffffff;
-    width: 44px;
-    height: 50px;
-    line-height: 50px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     text-align: center;
     display: inline-block;
-    margin-right: px;
+    margin-right: 5px;
   }
 
   .custom-navbar .nav li a {
@@ -315,6 +320,7 @@
   .custom-navbar .navbar-toggle {
     border: none;
     padding-top: 10px;
+    
   }
 
   .custom-navbar .navbar-toggle {
@@ -324,7 +330,12 @@
   .custom-navbar .navbar-toggle .icon-bar {
     background: #252525;
     border-color: transparent;
+    
   }
+
+
+  
+
   /* Sub menu configuracion */
   .submenu {
     margin: 0;
@@ -334,7 +345,8 @@
     box-sizing: border-box; 
     position: absolute;
     background: #ffffff;
-    width: 190px;
+    width: 210px;
+    
    
     visibility: hidden;
     opacity: 0;
@@ -367,6 +379,7 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity 1.5seg;
+  width: 200px;
  }
  
  .subtarifas li a{
@@ -453,8 +466,11 @@
   .feature-thumb {
     border: 1px solid #f0f0f0;
     padding: 5em 3em;
+    align-items: center;
   
   }
+
+
 
   .feature-thumb span {
     background: #19afe1;
@@ -468,14 +484,168 @@
     line-height: 60px;
     text-align: center;
     margin-bottom: 5px;
-    
+    left: 50%;
+    top: 18%;
+    transform: translateX(-50%)translateY(-50%);
+    position: absolute;
   }
+  /*BOROTONES DE LAS SUB PAGINAS */
+  .boton{
+
+    background: #19afe1;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 5px;
+    left: 50%;
+    top: 18%;
+    transform: translateX(-50%)translateY(-50%);
+    position: absolute;
+    transition: background-color 1.s;
+  }
+  .boton:hover{
+      background: #efc138;
+      color: white;
+   }
+   .boton2{
+
+    background: #efc138;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 5px;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%)translateY(-50%);
+    position: absolute;
+    transition: background-color 1.s;
+  }
+  .boton2:hover{
+      background: #19afe1;
+      color: white; }
+      
+      .boton3{
+
+        background: #efc138;
+        border-radius: 50px;
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: bold;
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        margin-bottom: px;
+        left: 10%;
+        top: 20%;
+        transform: translateX(-50%)translateY(-50%);
+        position: absolute;
+        transition: background-color 1.s;
+      }
+      .boton-3:hover{
+          background: #19afe1;
+          color: white; }
+      .boton-avion{
+
+            background: #efc138;
+            border-radius: 50px;
+            color: #ffffff;
+            font-size: 25px;
+            font-weight: bold;
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            margin-bottom: px;
+            left: 10%;
+            top: 9%;
+            transform: translateX(-50%)translateY(-50%);
+            position: absolute;
+            transition: background-color 1.s;
+          }
+      .boton-avion:hover{
+      background: #19afe1;
+      color: white; }
+          
+  .boton-barco{
+            background: #efc138;
+            border-radius: 50px;
+            color: #ffffff;
+            font-size: 25px;
+            font-weight: bold;
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            margin-bottom: px;
+            left: 10%;
+            top: 52%;
+            transform: translateX(-50%)translateY(-50%);
+            position: absolute;
+            transition: background-color 1.s;
+          }
+  .boton-barco:hover{
+            background: #19afe1;
+            color: white;}
+   .boton-puerta{
+
+              background: #efc138;
+              border-radius: 50px;
+              color: #ffffff;
+              font-size: 25px;
+              font-weight: bold;
+              display: inline-block;
+              width: 60px;
+              height: 60px;
+              line-height: 60px;
+              text-align: center;
+              margin-bottom: px;
+              left: 2%;
+              top: 20%;
+              transform: translateX(-50%)translateY(-50%);
+              position: absolute;
+              transition: background-color 1.s;
+            }
+    .boton-puerta:hover{
+                background: #19afe1;
+                color: white; }
+
+          
+    
+
+
+  /*---------------------------------------
+      FIN           
+  -----------------------------------------*/
+
+
+
+
 
   .feature-thumb h3 {
     margin: 10px 0;
+    text-align: center;
+    .feature-th{}
     
   }
+.contacto {
 
+}
 
 
   /*---------------------------------------
@@ -506,6 +676,9 @@
     line-height: 50px;
     text-align: center;
   }
+  
+
+
 
   /*---------------------------------------
       TEAM              
@@ -734,7 +907,7 @@
   -----------------------------------------*/
 
   #contact {
-    background: #181831;
+    background: 	#00345e;
   }
 
   #contact h2 {
@@ -790,7 +963,7 @@
   -----------------------------------------*/
 
   footer {
-    background: #252020;
+    background: #06396a;
     padding: 120px 0;
   }
 
@@ -896,7 +1069,7 @@
 
   .social-icon li a {
     border-radius: 100px;
-    color: #29ca8e;
+    color: 	#ffffff;
     font-size: 15px;
     width: 35px;
     height: 35px;
@@ -909,11 +1082,77 @@
   }
 
   .social-icon li a:hover {
-    background: #29ca8e;
+    background:	#efc138;
     color: #ffffff;
   }
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
 
+  .social-icon li {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: 5px;
+  }
 
+  .social-icon li a {
+    border-radius: 100px;
+    color: 	#ffffff;
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    margin: 5px 5px 5px 0;
+  }
+
+  .social-icon li a:hover {
+    background:	#efc138;
+    color: #ffffff;
+    .button{
+      social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  .social-icon li {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: 5px;
+  }
+
+  .social-icon li a {
+    border-radius: 100px;
+    color: 	#ffffff;
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    margin: 5px 5px 5px 0;
+  }
+
+  .social-icon li a:hover {
+    background:	#efc138;
+    color: #ffffff;
+    }
+    .button{
+      background-color: #ffffff;
+      transition: background-color.5s;
+    
+    }
+   
+    
+    
 
   /*---------------------------------------
      RESPONSIVE STYLES              
