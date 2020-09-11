@@ -1,3 +1,29 @@
+<?php
+    $con = mysqli_connect('51.83.52.200','root','');
+
+    if(!con) {
+        echo 'not connected';
+    }
+
+    if(!mysqli_select_db($con,'venevenc_wp1')) {
+        echo 'no selected';
+    }
+
+    $Name = $_POST('username');
+    $Mail = $_POST('email');
+    $Phone = $_POST('phone');
+    $Message = $_POST('message');
+    
+    $sql = "INSERT INTO person (Name, Mail, Phone, Message) VALUES ('$Name', '$Email', '$Phone','$Message')";
+
+    if(!mysqli_query($con,$sql)) {
+        echo 'not inserted';
+    } else {
+        echo 'inserted';
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -776,7 +802,7 @@ Torrejón del Rey.
                     <div class="row">
      
                          <div class="col-md-6 col-sm-12">
-                              <form id="contact-form" role="form" action="insert.php" method="post">
+                              <form id="contact-form" role="form" action="index.php" method="post">
                                    <div class="section-title">
                                         <h2>Contáctanos! <small>Nosotros estamos para ayudar , Empecemos!</small></h2>
                                    </div>
